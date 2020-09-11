@@ -1,0 +1,98 @@
+body {
+    height: 100px;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    margin: 0;
+    padding: 0;
+    color: #666;
+    
+}
+
+#image1, #image2, #image3, #image4 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#image1 {
+    background-image: url(./images/F35.jpg);
+    min-height: 100vh;
+}
+
+#image2 {
+    background-image: url(./images/F22.jpg);
+    min-height: 50vh;
+}
+
+#image3 {
+    background-image: url(./images/F16.jpg);
+    min-height: 400px;
+}
+
+#image4 {
+    background-image: url(./images/cloud.jpg);
+    min-height: 100vh;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section1, .section2, .section3 {
+    color: #ddd;
+    background-color: #1786b3;
+    
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: #eb0d1f;
+}
+
+h2 {
+    font-size: 200%;
+    color: #eb0d1f;
+}
+
+
+#image1text, #image2text, #image3text, #image4text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 25px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.border {
+    background-color: #111111;
+    color: #1333e7;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+@media(max-width: 568px){
+    #image1, #image2, #image3, #image4{
+        background-attachment: scroll;
+    }
+    #image1text, #image2text, #image3text, #image4text{
+        position: absolute;
+        top: 80%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+        font-size: 18px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+}
